@@ -117,4 +117,4 @@ def SpeechRecognition():
 if __name__ == "__main__":
     while True:
         Text = SpeechRecognition()
-       # print(Text)
+        print(Text)
