@@ -574,5 +574,13 @@
     {
         "role": "assistant",
         "content": "According to the information I have, in 2025, the President of the United States of America is Donald Trump."
+    },
+    {
+        "role": "user",
+        "content": "who is prime minister of india"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the information I have, the Prime Minister of India is Narendra Modi."
     }
 ]

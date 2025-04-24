@@ -85,7 +85,7 @@ def RealtimeSearchEngine(prompt):
     try:
         # Call Groq API for completion
         completion = client.chat.completions.create(
-            model="llama3-70b-8192",
+            model="llama3-8b-8192",
             messages=SystemChatBot + [{"role": "system", "content": Information()}] + messages,
             temperature=0.7,
             max_tokens=2048,
@@ -93,6 +93,16 @@ def RealtimeSearchEngine(prompt):
             stream=True,
             stop=None
         )
+    #     completion = client.chat.completions.create(
+    #     model="llama3-8b-8192",  # ✅ Updated model
+    #     messages=SystemChatBot + messages,
+    #     max_tokens=2048,
+    #     temperature=0.7,
+    #     top_p=1,
+    #     stream=True,
+    #     stop=None
+    # )
+
     except Exception as e:
         return f"Error occurred during chat completion: {e}"
 
